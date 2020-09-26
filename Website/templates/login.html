@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Farma Friend</title>
+    <link rel="stylesheet" href={{ url_for('static', filename="login.css") }} />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a>Login</a></li>
+                <li>|</li>
+                <li><a>Sign-Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <div class="name">
+            <img src={{ url_for('static', filename="img/cube.png") }} class="cube">
+            <p><span class="first">F</span><span class="last">arma</span><br><span class="first">F</span><span class="last">riend</span><br>A Farmer Solution Platform.</p>
+        </div>
+        <div class="box">
+            <div class="logo">
+                <form action="#">
+                    <h1>Login</h1>
+                    <div class="input">
+                        <div class="logo">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="logo">
+                            <input type="text" name='username' placeholder="Username"/>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div class="logo">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="logo">
+                            <input type="password" name="pw" placeholder="Password"/>
+                        </div>
+                    </div>
+                    <h4><a>Forget Password?</a></h4>
+                    <input type="submit" value="Login" class="btn" />
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
