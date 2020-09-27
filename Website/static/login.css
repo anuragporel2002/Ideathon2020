@@ -2,7 +2,9 @@ body{
     background-image: url("img/bg.jpg");
     background-size: 100%;
     color:white;
-    font-family: Arial, Helvetica, sans-serif;    
+    font-family: Arial, Helvetica, sans-serif; 
+    opacity: 0;
+    transition: opacity 3s;   
 }
 header {   
     padding-left: 15px;
@@ -21,6 +23,10 @@ li {
     border-radius: 3px;
     color:white;
     text-decoration: underline;
+}
+li.bt:hover{
+    color: royalblue;
+    text-decoration: none;
 }
 ul {
     margin: 30px;
@@ -101,8 +107,13 @@ input::-webkit-input-placeholder {
     color: rgb(112, 111, 111);
 }
 h4{
-    text-decoration: underline;
+    text-decoration: none;
     text-align: center;
+    color: royalblue;
+}
+h4:hover{
+    text-decoration: underline;
+    color: white;
 }
 input.btn{
     max-width: 100px;
@@ -120,4 +131,59 @@ input.btn::-webkit-input-placeholder {
     color: rgb(255, 253, 253);
     font-weight: bold;
 }
+input.btn:hover{
+    background: limegreen;
+    font-size: 22px;
+}
+
+a.bt{
+    color: white;
+
+}
+a.bt:hover{
+    text-decoration: none;
+    font-size: 25px;
+}
+a{
+    color: royalblue;
+}
+a:hover{
+    text-decoration: underline;
+    color: white;
+    font-size: 1.1em;
+}
+a.bt:hover{
+    color: rgb(100, 139, 255);
+}
+select.type{
+    background:rgba(255, 255, 255, 0.616);
+    max-width: 300px;
+    width: 240%;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 3;
+    color: rgb(99, 94, 94);
+}
+option[value="seller"]{
+    background-color:rgba(255, 255, 255, 0.616);
+    max-width: 300px;
+    width: 240%;
+    height: 60px;
+    font-size: 20px;
+    line-height: 3;
+    color: black;
+}
+option[value="buyer"]{
+    max-width: 300px;
+    width: 240%;
+    height: 60px;
+    font-size: 20px;
+    border-radius:  5px;
+    line-height: 3;
+    color: black;
+}
+
+
+
 
